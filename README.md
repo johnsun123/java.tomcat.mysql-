@@ -20,12 +20,15 @@ cd java
 ###4、将下载的jdk拖拽到该目录下，完成上传
 ###5、在xShell中输入 tar -zxvf jdk-8u221-linux-x64.tar.gz完成解压
 ###6、修改环境变量
-###   输入sudo vim /etc/profile
-###   在段落最后输入：
-###      export JAVA_HOME=/software/java/jdk1.8.0_221
-###      export PATH=$JAVA_HOME/bin:$PATH
-###      export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
-###   输入完成后按ECS，后输入：wq完成保存退出
+
+```java
+输入sudo vim /etc/profile
+在段落最后输入：
+export JAVA_HOME=/software/java/jdk1.8.0_221
+export PATH=$JAVA_HOME/bin:$PATH
+export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
+输入完成后按ECS，后输入：wq完成保存退出
+```
 ###7、输入java -version完成安装确认，如出现（java version "1.8.0_211"）则说明安装成功
 
 
@@ -33,10 +36,12 @@ cd java
 ## tomcat8.5安装
 ###1、下载tomcat8.5（https://tomcat.apache.org/download-80.cgi）下载core中tar.gz
 ###2、打开xShell及xFtp，连接好云服务器后，在xShell中输入：
-###   cd /usr
-###   cd software
-###   mkdir tomcat
-###   cd tomcat
+```java
+cd /usr
+cd software
+mkdir tomcat
+cd tomcat
+```
 ###3、打开xFtp，进入/usr/software/tomcat
 ###4、将下载的jdk拖拽到该目录下，完成上传
 ###5、在xShell中输入 tar -zxvf apache-tomcat-8.5.43.tar.gz完成解压
@@ -44,11 +49,13 @@ cd java
 ###7、在xFtp中进入apache-tomcat-8.5.43/bin，打开startup.sh
 ###8、在最后加入：
 
-###      export JAVA_HOME=/software/java/jdk1.8.0_221
-###      export JRE_HOME=${JAVA_HOME}/jre
-###      export CLASSPATH=.:%{JAVA_HOME}/lib:%{JRE_HOME}/lib
-###      export PATH=${JAVA_HOME}/bin:$PATH
-###      export TOMCAT_HOME=/software/Tomcat/apache-tomcat-8.5.43
+```
+export JAVA_HOME=/software/java/jdk1.8.0_221
+export JRE_HOME=${JAVA_HOME}/jre
+export CLASSPATH=.:%{JAVA_HOME}/lib:%{JRE_HOME}/lib
+export PATH=${JAVA_HOME}/bin:$PATH
+export TOMCAT_HOME=/software/Tomcat/apache-tomcat-8.5.43
+```
 ###9、保存startup.sh
 ###10、在xFtp中输入./startup.sh,出现（“tomcat started”）
 ###11、在云服务器控制台开放80/8080/443端口
