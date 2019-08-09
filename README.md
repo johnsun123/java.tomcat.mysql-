@@ -3,15 +3,19 @@
 #本次安装环境为ubuntu18.04 其他环境可能略有不同
 #完成xShell及xFtp的安装(https://www.netsarang.com/zh/free-for-home-school/)
 
-##jdk1.8安装
+## jdk1.8安装
 ###1、下载jdk1.8(https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) 登录后下载jdk-8u221-linux-x64.tar.gz
 
 ###2、打开xShell及xFtp，连接好云服务器后，在xShell中输入：
-###   cd /usr
-###   mkdir software
-###   cd software
-###   mkdir java
-###   cd java
+
+
+### cd /usr
+### mkdir software
+### cd software
+### mkdir java
+### cd java
+
+
 ###3、打开xFtp，进入/usr/software/java
 ###4、将下载的jdk拖拽到该目录下，完成上传
 ###5、在xShell中输入 tar -zxvf jdk-8u221-linux-x64.tar.gz完成解压
@@ -26,7 +30,7 @@
 
 
 
-##tomcat8.5安装
+## tomcat8.5安装
 ###1、下载tomcat8.5（https://tomcat.apache.org/download-80.cgi）下载core中tar.gz
 ###2、打开xShell及xFtp，连接好云服务器后，在xShell中输入：
 ###   cd /usr
@@ -52,7 +56,7 @@
 ###（后可根据业务需要对tomcat进行更进一步配置）
 
 
-##mysql 5.7安装
+## mysql 5.7安装
 ###1、下载mysql 
 ###   sudo apt-get install mysql-server mysql-client
 ###2、查看初始密码。如：pjm0QqwzkqR3jnM8
