@@ -1,4 +1,5 @@
 # lamp
+
 #本次安装环境为ubuntu18.04 其他环境可能略有不同
 #完成xShell及xFtp的安装(https://www.netsarang.com/zh/free-for-home-school/)
 
@@ -87,3 +88,5 @@
 ####  quit;
 ####  sudo service mysql restart
 ####  即可完成修改
+
+php的相关会在随后进行更新~
