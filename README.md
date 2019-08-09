@@ -93,4 +93,4 @@
 ####  sudo service mysql restart
 ####  即可完成修改
 
-php的相关会在随后进行更新~
+## php的相关会在随后进行更新~
