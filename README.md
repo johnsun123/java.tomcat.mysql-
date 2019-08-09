@@ -8,13 +8,13 @@
 
 ###2、打开xShell及xFtp，连接好云服务器后，在xShell中输入：
 
-
-### cd /usr
-### mkdir software
-### cd software
-### mkdir java
-### cd java
-
+'''java
+cd /usr
+mkdir software
+cd software
+mkdir java
+cd java
+'''
 
 ###3、打开xFtp，进入/usr/software/java
 ###4、将下载的jdk拖拽到该目录下，完成上传
