@@ -28,14 +28,15 @@ cd java
 
 6、修改环境变量
 
-```java
-输入sudo vim /etc/profile
+输入`sudo vim /etc/profile`
 在段落最后输入：
+```java
 export JAVA_HOME=/software/java/jdk1.8.0_221
 export PATH=$JAVA_HOME/bin:$PATH
 export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
-输入完成后按ECS，后输入：wq完成保存退出
 ```
+输入完成后按ECS，后输入：wq完成保存退出
+
 7、输入java -version完成安装确认，如出现`java version "1.8.0_211"`则说明安装成功
 ![image](https://github.com/johnsun123/lamp/blob/master/javaSuccessfulInstalledPage.PNG)
 
