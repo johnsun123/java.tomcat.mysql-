@@ -6,7 +6,7 @@
 
 ## jdk1.8安装
 
-1、下载jdk1.8(https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) 登录后下载jdk-8u221-linux-x64.tar.gz
+1、下载[jdk1.8](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) 登录后下载jdk-8u221-linux-x64.tar.gz
 
 2、打开xShell及xFtp，连接好云服务器后，在xShell中输入：
 
@@ -19,8 +19,11 @@ cd java
 ```
 
 3、打开xFtp，进入`/usr/software/java`
+
 4、将下载的jdk拖拽到该目录下，完成上传
+
 5、在xShell中输入 `tar -zxvf jdk-8u221-linux-x64.tar.gz`完成解压
+
 6、修改环境变量
 
 ```java
