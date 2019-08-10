@@ -138,7 +138,8 @@ sudo service mysql restart
 
 ## php的相关会在随后进行更新~
 
+
 ### 有问题请与作者联系
 在使用中有任何问题，欢迎反馈给我，可以用以下联系方式跟我交流
 
-邮件(`wojiaosp@126.com`)
+邮件:`wojiaosp@126.com`
