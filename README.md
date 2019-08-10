@@ -5,9 +5,10 @@
 **提示:** 完成xShell及xFtp的安装(https://www.netsarang.com/zh/free-for-home-school/)
 
 ## jdk1.8安装
-###1、下载jdk1.8(https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) 登录后下载jdk-8u221-linux-x64.tar.gz
 
-###2、打开xShell及xFtp，连接好云服务器后，在xShell中输入：
+1、下载jdk1.8(https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) 登录后下载jdk-8u221-linux-x64.tar.gz
+
+2、打开xShell及xFtp，连接好云服务器后，在xShell中输入：
 
 ```java
 cd /usr
@@ -17,10 +18,10 @@ mkdir java
 cd java
 ```
 
-###3、打开xFtp，进入/usr/software/java
-###4、将下载的jdk拖拽到该目录下，完成上传
-###5、在xShell中输入 tar -zxvf jdk-8u221-linux-x64.tar.gz完成解压
-###6、修改环境变量
+3、打开xFtp，进入`/usr/software/java`
+4、将下载的jdk拖拽到该目录下，完成上传
+5、在xShell中输入 `tar -zxvf jdk-8u221-linux-x64.tar.gz`完成解压
+6、修改环境变量
 
 ```java
 输入sudo vim /etc/profile
@@ -30,7 +31,7 @@ export PATH=$JAVA_HOME/bin:$PATH
 export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
 输入完成后按ECS，后输入：wq完成保存退出
 ```
-###7、输入java -version完成安装确认，如出现（java version "1.8.0_211"）则说明安装成功
+7、输入java -version完成安装确认，如出现`java version "1.8.0_211"`则说明安装成功
 
 
 
