@@ -129,7 +129,7 @@ sudo service mysql restart
 netstat -an | grep 3306
 ```
 
-**注意：**使用Navicat登录出现“1130-host ... is not allowed to connect to this MySql server”，使用如下方法：
+**注意：** 使用Navicat登录出现“1130-host ... is not allowed to connect to this MySql server”，使用如下方法：
 ```
 mysql -u root -p密码>use mysql;
 update user set host = '%' where user = 'root';
