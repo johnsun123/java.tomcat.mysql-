@@ -29,8 +29,9 @@ cd java
 6、修改环境变量
 
 输入`sudo vim /etc/profile`
+
 在段落最后输入：
-```java
+```linux
 export JAVA_HOME=/software/java/jdk1.8.0_221
 export PATH=$JAVA_HOME/bin:$PATH
 export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
