@@ -75,6 +75,9 @@ export TOMCAT_HOME=/software/Tomcat/apache-tomcat-8.5.43
 
 12、通过IP：8080访问（eg：39.105.113.58:8080）如出现tomcat安装成功界面，则说明安装成功
 
+![image]
+(https://github.com/johnsun123/lamp/blob/master/tomcatSuccessfulInstalledPage.PNG)
+
 **提示：**（后可根据业务需要对tomcat进行更进一步配置）
 
 
