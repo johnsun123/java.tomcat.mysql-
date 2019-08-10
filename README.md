@@ -1,7 +1,7 @@
 # lamp
 
-#本次安装环境为ubuntu18.04 其他环境可能略有不同
-#完成xShell及xFtp的安装(https://www.netsarang.com/zh/free-for-home-school/)
+**提示:** 本次安装环境为ubuntu18.04 其他环境可能略有不同
+**提示:** 完成xShell及xFtp的安装(https://www.netsarang.com/zh/free-for-home-school/)
 
 ## jdk1.8安装
 ###1、下载jdk1.8(https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) 登录后下载jdk-8u221-linux-x64.tar.gz
