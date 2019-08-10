@@ -4,9 +4,11 @@
 
 **提示:** 完成[xShell及xFtp](https://www.netsarang.com/zh/free-for-home-school/)的安装
 
+**提示：** 在安装之前，请先更新更新软件源中的所有软件列表 `sudo apt-get update`
+
 ## jdk1.8安装
 
-1、下载[jdk1.8](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) 登录后下载jdk-8u221-linux-x64.tar.gz
+1、下载[jdk1.8](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) 登录后下载`jdk-8u221-linux-x64.tar.gz`
 
 2、打开xShell及xFtp，连接好云服务器后，在xShell中输入：
 
