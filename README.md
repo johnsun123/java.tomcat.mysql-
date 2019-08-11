@@ -1,4 +1,4 @@
-# lamp
+# java.tomcat.mysql环境搭建
 
 **提示:** 本次安装环境为ubuntu18.04 其他系统可能略有不同
 
