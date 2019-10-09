@@ -85,7 +85,9 @@ export TOMCAT_HOME=/software/Tomcat/apache-tomcat-8.5.43
 
 
 ## mysql 5.7安装
-1、下载mysql，在xShell中输入：`sudo apt-get install mysql-server mysql-client`
+1、下载mysql，在xShell中输入：
+
+`sudo apt-get install mysql-server mysql-client`
 
 2、查看初始密码。如：pjm0QqwzkqR3jnM8
 
