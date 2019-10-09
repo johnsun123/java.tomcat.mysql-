@@ -87,7 +87,9 @@ export TOMCAT_HOME=/software/Tomcat/apache-tomcat-8.5.43
 ## mysql 5.7安装
 1、下载mysql，在xShell中输入：`sudo apt-get install mysql-server mysql-client`
 
-2、查看初始密码。如：pjm0QqwzkqR3jnM8`sudo cat /etc/mysql/debian.cnf`
+2、查看初始密码。如：pjm0QqwzkqR3jnM8
+
+`sudo cat /etc/mysql/debian.cnf`
 
 3、登录mysql，修改密码。此时输入的密码为上述密码。
 ```
@@ -126,7 +128,7 @@ vim /etc/mysql/mysql.conf.d/mysqld.cnf
 ```
 sudo service mysql restart
 ```
-10、检查是否完成修改。如出现0.0.0.0:3306或：：：3306，则修改成功
+10、检查是否完成修改。如出现0.0.0.0:3306或:::3306，则修改成功
 
 ```
 netstat -an | grep 3306
@@ -134,7 +136,8 @@ netstat -an | grep 3306
 
 **注意：** 使用Navicat登录出现“1130-host ... is not allowed to connect to this MySql server”，使用如下方法：
 ```
-mysql -u root -p密码>use mysql;
+mysql -u root -p密码;
+use mysql
 update user set host = '%' where user = 'root';
 select host, user from user;
 quit;
