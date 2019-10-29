@@ -38,6 +38,7 @@ export JRE_HOME=${JAVA_HOME}/jre
 输入完成后按 `ECS`，后输入 `：wq`完成保存退出
 
 7、输入java -version完成安装确认，如出现`java version "1.8.0_211"`则说明安装成功
+
 ![image](https://github.com/johnsun123/java.tomcat.mysql-/blob/master/javaSuccessfulInstalledPage.PNG)
 
 
