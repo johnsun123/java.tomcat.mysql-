@@ -42,7 +42,7 @@ export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
 
 7、输入`source /etc/profile`完成配置更新
 
-8、输入java -version完成安装确认，如出现`java version "1.8.0_211"`则说明安装成功
+8、输入`java -version`完成安装确认，如出现`java version "1.8.0_211"`则说明安装成功
 
 
 
