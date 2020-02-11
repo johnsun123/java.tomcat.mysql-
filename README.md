@@ -150,6 +150,68 @@ sudo service mysql restart
 ```
 即可完成修改
 
+## nginx的安装与配置
+
+1.安装Nginx
+`sudo apt-get install nginx`
+
+2.安装路径为：/etc/nginx
+
+web路径为：/var/www/html
+
+3.重启Nginx:
+`service nginx restart`
+
+4.配置Nginx：
+* 配置http跳转https
+* 配置https（ssl）
+* 配置80端口访问
+* 二级域名
+        
+```text
+nginx.conf
+
+server {
+    listen 80;
+    server_name tomcat.javagood.top;   #将localhost修改为您证书绑定的域名，例如：www.example.com。
+    return 301 https://tomcat.javagood.top$request_uri;    #将所有http请求通过rewrite重定向到https。
+    location / {
+        index index.html index.htm;
+}
+}
+
+
+
+server {
+    listen 443 ssl;   #SSL协议访问端口号为443。此处如未添加ssl，可能会造成Nginx无法启动。
+    server_name tomcat.javagood.top;  #将localhost修改为您证书绑定的域名，例如：www.example.com。
+    root html;
+    index index.html index.htm;
+    ssl_certificate /etc/nginx/conf.d/cert/tomcat/****.pem;   #将domain name.pem替换成您证书的文件名。
+    ssl_certificate_key /etc/nginx/conf.d/cert/tomcat/****.key;   #将domain name.key替换成您证书的密钥文件名。
+    ssl_session_timeout 5m;
+    ssl_ciphers ECDHE-RSA-AES128-GCM-SHA256:ECDHE:ECDH:AES:HIGH:!NULL:!aNULL:!MD5:!ADH:!RC4;  #使用此加密套件。
+    ssl_protocols TLSv1 TLSv1.1 TLSv1.2;   #使用该协议进行配置。
+    ssl_prefer_server_ciphers on;   
+    location / {
+        root    /usr/tomcat/apache-tomcat-8.5.50/webapps/ROOT;
+        index   index.html index.htm;
+    }
+}
+
+
+server {
+    listen          80;
+    server_name     nginx.javagood.top;
+
+    location / {
+        root   /var/www/html;
+        index  index.html index.htm;
+    }
+}
+
+```
+
 
 ### 有问题请与作者联系
 在使用中有任何问题，欢迎反馈给我，可以用以下联系方式跟我交流
