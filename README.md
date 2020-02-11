@@ -1,4 +1,4 @@
-# java.tomcat.mysql环境搭建
+# java.tomcat.mysql.nginx环境搭建
 
 **提示:** 本次安装环境为ubuntu18.04 其他系统可能略有不同
 
@@ -174,7 +174,7 @@ nginx.conf
 server {
     listen 80;
     server_name tomcat.javagood.top;   #将localhost修改为您证书绑定的域名，例如：www.example.com。
-    return 301 https://tomcat.javagood.top$request_uri;    #将所有http请求通过rewrite重定向到https。
+    return 301 https://tomcat.javagood.top$request_uri;    #将所有http请求通过return重定向到https。
     location / {
         index index.html index.htm;
 }
