@@ -87,6 +87,31 @@ export TOMCAT_HOME=/software/Tomcat/apache-tomcat-8.5.43
 **提示：**（后可根据业务需要对tomcat进行更进一步配置）
 
 
+## mariaDB for aliYun
+```
+sudo apt-get install software-properties-common
+sudo apt-key adv --fetch-keys 'https://mariadb.org/mariadb_release_signing_key.asc'
+sudo add-apt-repository 'deb [arch=amd64,arm64,ppc64el] https://mirrors.ustc.edu.cn/mariadb/repo/10.5/ubuntu focal main'
+
+sudo apt update
+sudo apt install mariadb-server
+
+mariadb-secure-installation
+```
+
+### 外网访问
+```
+GRANT ALL PRIVILEGES ON *.* TO 'root'@'%'IDENTIFIED BY 'sp19990327' WITH GRANT OPTION;
+flush privileges;
+
+cd /etc/mysql/mariadb.conf.d/50-server.cnf
+注释掉127.0.0.1
+
+FLUSH PRIVILEGES;
+service mysql restart
+```
+
+
 ## mysql 5.7安装
 1、下载mysql，在xShell中输入：
 
